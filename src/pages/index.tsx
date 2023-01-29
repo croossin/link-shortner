@@ -121,7 +121,7 @@ export default function Home() {
                           id="text"
                           ref={inputRef}
                           type="text"
-                          className="block w-full rounded-r-[10px] rounded-l-[10px] pl-10 focus:ring-0 focus:outline-none focus:ring-offset-0 sm:text-sm min-h-[50px]"
+                          className="block w-full rounded-r-[10px] rounded-l-[10px] pl-10 focus:ring-0 focus:outline-none focus:ring-offset-0 sm:text-sm min-h-[50px] lowercase"
                           placeholder={
                             PLACEHOLDER_URLS[
                               Math.floor(
@@ -133,6 +133,7 @@ export default function Home() {
                           onChange={(e) => {
                             setLinkToShorten(e.target.value);
                           }}
+                          autoComplete="off"
                         />
                       </div>
                     </div>

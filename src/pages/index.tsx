@@ -48,7 +48,7 @@ export default function Home() {
         <meta name="description" content="Nifty link shortner" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <div className="isolate bg-white">
+      <div className="isolate bg-white ">
         <div className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
           <svg
             className="relative left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem]"
@@ -75,10 +75,10 @@ export default function Home() {
             </defs>
           </svg>
         </div>
-        <main>
+        <main className="h-screen -mb-8">
           <div className="relative px-6 lg:px-8">
             <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-              <div className="hidden sm:mb-8 sm:flex sm:justify-center">
+              <div className="mb-8 sm:flex sm:justify-center">
                 <div className="relative rounded-full py-1 px-3 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
                   This demo is part of a blog post.{" "}
                   <a
@@ -188,6 +188,14 @@ export default function Home() {
             </div>
           </div>
         </main>
+        <footer className="mx-auto text-center">
+          <div className="text-slate-500">
+            Made with 🖤{" "}
+            <a href="https://roo.app" target="_blank">
+              roo.app
+            </a>
+          </div>
+        </footer>
       </div>
     </>
   );

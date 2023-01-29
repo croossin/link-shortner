@@ -191,7 +191,7 @@ export default function Home() {
         <footer className="mx-auto text-center">
           <div className="text-slate-500">
             Made with 🖤{" "}
-            <a href="https://roo.app" target="_blank">
+            <a href="https://roo.app" target="_blank" rel="noreferrer">
               roo.app
             </a>
           </div>

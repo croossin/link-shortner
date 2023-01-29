@@ -19,7 +19,9 @@ export default async function handler(
   await redisClient.set(shortenedPath, urlToShorten);
 
   // Return full url
-  const link = `${process.env.VERCEL_URL ?? "localhost:3000"}/${shortenedPath}`;
+  const link = `${
+    process.env.PUBLIC_DOMAIN ?? "localhost:3000"
+  }/${shortenedPath}`;
   return res.status(200).json({ link });
 }
 

@@ -1,4 +1,4 @@
-# git.cmd
+# 🔗 Link Shortner
 
 ![Alt text](github/headline.png?raw=true "Headline")
 

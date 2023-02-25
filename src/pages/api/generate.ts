@@ -19,7 +19,7 @@ export default async function handler(
   await redisClient.set(shortenedPath, urlToShorten);
 
   // Return full url
-  const link = `https://${
+  const link = `${
     process.env.PUBLIC_DOMAIN ?? "localhost:3000"
   }/${shortenedPath}`;
   return res.status(200).json({ link });

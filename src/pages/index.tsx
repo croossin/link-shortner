@@ -148,7 +148,9 @@ export default function Home() {
                       className="text-lg font-semibold mt-2 hover:cursor-pointer"
                       onClick={() => {
                         try {
-                          navigator.clipboard.writeText(shortenedLink);
+                          navigator.clipboard.writeText(
+                            `https://${shortenedLink}`
+                          );
                         } catch (e) {
                           console.warn("Can't access navigator");
                         }
